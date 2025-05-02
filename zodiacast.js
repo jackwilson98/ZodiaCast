@@ -8,5 +8,9 @@ const endings = ["transformation and growth.", "unexpected insights.", "connecti
 //function to generate a random message
 function generateMessage() {
     const randomSign= signs(Math.floor(Math.random() * signs.length));
+    const randomOpening = openings[Math.floor(Math.random() * openings.length)];
+    const randomEnding = endings[Math.floor(Math.random() * endings.length)];
+    const message = `${randomOpening} ${randomSign} ${randomEnding}`;
+    return message;
 }
 
